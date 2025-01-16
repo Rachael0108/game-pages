@@ -1,0 +1,42 @@
+#pc-event {
+  width: 1920px;
+  height: 940px;
+  position: relative;
+
+  .event-btn {
+    width: 459px;
+    height: 149px;
+    position: absolute;
+    bottom: 35px;
+    left: calc((100% - 459px) / 2);
+  }
+  .pc-event-rewards {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .pc-reward-top {
+      img {
+        margin: auto;
+      }
+    }
+    .pc-reward-bottom {
+      display: flex;
+      justify-content: center;
+    }
+
+    .reward-a {
+      width: 777px;
+      height: 453px;
+    }
+    .reward-b {
+      width: 568px;
+      height: 308px;
+    }
+    .reward-c {
+      width: 595px;
+      height: 311px;
+    }
+  }
+}

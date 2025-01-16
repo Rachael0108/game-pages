@@ -1,0 +1,45 @@
+#pc-kv {
+
+    .kv-role {
+        position: relative;
+        width: 1920px;
+        height: 1164px;
+        left: 0;
+        top: 0;
+    }
+
+    .kv-logo {
+        position: absolute;
+        width: 297px;
+        height: 196px;
+        left: calc((750px - 297px) / 2);
+        top: 134px;
+    }
+
+    .kv-quoto {
+      width: 1217px;
+      height: 161px;
+      position: absolute;
+      bottom: 140px;
+      left: calc((1920px - 1217px) / 2);
+      z-index: 12;
+    }
+  .pc-download {
+    width: calc(290px * 2 + 20px);
+    height: 138px;
+    position: absolute;
+    bottom: 70px;
+    left: calc((1920px - (290px * 2 - 40px)) / 2);
+    display: flex;
+    justify-content: flex-start;
+    z-index: 10;
+
+    img {
+      width: 290px;
+    }
+    img:last-child {
+      margin-left: -60px;
+    }
+  }
+}
+

@@ -1,0 +1,78 @@
+#mb-kv {
+  position: relative;
+  height: 739px;
+
+  .kv-role {
+    position: absolute;
+    width: 100%;
+    height: 739px;
+    left: 0;
+    top: 0;
+  }
+
+  .kv-logo {
+    position: absolute;
+    width: 297px;
+    height: 196px;
+    left: calc((750px - 297px) / 2);
+    top: 134px;
+  }
+
+  .kv-finger {
+    position: absolute;
+    width: 127px;
+    height: 127px;
+    left: calc((750px - 12px) / 2 + 200px);
+    bottom: 50px;
+    animation: moveFinger 1.3s ease-out infinite;
+  }
+
+  .kv-store {
+    display: flex;
+    width: calc(258px * 2);
+    position: absolute;
+    bottom: 50px;
+    left: calc((750px - 258px * 2 + 40px ) / 2);
+  }
+
+  .ios-btn, .gp-btn {
+    width: 258px;
+    height: 107px;
+    left: calc((750px - 258px) / 2);
+    bottom: 170px;
+  }
+.gp-btn {
+  margin-left: -40px;
+}
+
+  @keyframes moveFinger {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    50% {
+      transform: translateX(-20px) translateY(-20px);
+    }
+    100% {
+      transform: translateX(0) translateY(0);
+    }
+  }
+  @keyframes breathing {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+#pc-kv {
+  position: relative;
+
+  .kv-role {
+    width: 100%;
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "types": ["node"],
+    "esModuleInterop": true
+  },
+  "include": ["vite.config.*", "postcss-px-to-viewport.*"]
+}

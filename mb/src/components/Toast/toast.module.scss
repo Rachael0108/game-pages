@@ -1,0 +1,46 @@
+.Ytoast {
+  width: 370px;
+  height: 100px;
+  background: rgba(45, 45, 45, 0.81);
+  padding: 5px 20px;
+  margin-top: -49.5px;
+  position: fixed;
+  left: calc((100vw - 410px) / 2);
+  top: 50%;
+  z-index: 10000;
+  font-size: 26px;
+  font-family: Hak, sans-serif;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    width: 70%;
+    line-height: 37px;
+    text-align: center;
+  }
+}
+.fadeIn {
+  animation: keyframes-fadeIn 0.5s forwards;
+}
+.fadeOut {
+  animation: keyframes-fadeOut 0.5s forwards;
+}
+
+@keyframes keyframes-fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes keyframes-fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

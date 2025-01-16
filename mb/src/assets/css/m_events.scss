@@ -1,0 +1,99 @@
+#mb-event {
+  width: 750px;
+  height: 1360px;
+  position: relative;
+  top: 0;
+
+  .mb-event-inner {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .mb-event-rewards {
+    width: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    img:nth-child(1) {
+      width: 630px;
+      height: 358px;
+      margin-top: 20px;
+    }
+    img:nth-child(2) {
+      width: 604px;
+      height: 317px;
+    }
+    img:nth-child(3) {
+      margin-top: 30px;
+      width: 635px;
+      height: 319px;
+    }
+  }
+
+  .mb-event-btn {
+    position: absolute;
+    bottom: 50px;
+    width: 530px;
+    height: 148px;
+  }
+
+  @keyframes searchLight {
+    0% {
+      left: -50%;
+      top: 0;
+    }
+    100% {
+      left: 100%;
+      top: 100%;
+    }
+  }
+  .slideInLeft {
+    transform: translateX(0%);
+  }
+  @keyframes fade-in-left {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .page-wrapper {
+    position: absolute;
+    top: 750px;
+  }
+}
+
+.shake-horizontal {
+  animation: shake-horizontal 3s ease-in-out infinite;
+}
+
+@keyframes shake-horizontal {
+  50%, 100% {
+    transform: translateX(0)
+  }
+  52%, 58%, 65%, 70% {
+    transform: translateX(-5px)
+  }
+  55%, 61%, 68% {
+    transform: translateX(5px)
+  }
+  80% {
+    transform: translateX(4px)
+  }
+  90% {
+    transform: translateX(-4px)
+  }
+}
+
+@keyframes opacityIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,60 @@
+#timer {
+  width: 500px;
+  position: absolute;
+  bottom: 192px;
+  left: calc((100% - 530px) / 2);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-family: FC;
+
+  p {
+    position: relative;
+  }
+  .timer-line {
+    width: 40px;
+    height: 130px;
+  }
+  .timer-bg {
+    width: 130px;
+    height: 130px;
+    font-size: 85px;
+    line-height: 85px;
+    background: linear-gradient(180deg, white 20%, #f6d989, #f6d989);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  span {
+    font-size: 80px;
+    color: white;
+    letter-spacing: 1px;
+  }
+
+  .timer-text {
+    position: relative;
+    top: 0;
+    z-index: 10;
+  }
+  .timer-text-svg {
+    position: relative;
+    top: 15px;
+    width: 130px;
+    height: 130px;
+    fill: white;
+    stroke: #58381c;
+    stroke-width: 20px;
+    paint-order: stroke;
+    stroke-linejoin: round;
+  }
+  .timer-quote {
+    width: 50px;
+    height: 130px;
+  }
+}
+#timer {
+  p:nth-child(1) {
+    padding-left: 8px;
+  }
+}
+//58381c

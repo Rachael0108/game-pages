@@ -1,0 +1,62 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 750px;
+  height: 370px;
+  background: black;
+  z-index: 12;
+  text-align: center;
+  padding: 40px 0 30px 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: adobe-bold, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+
+}
+footer {
+  position: relative;
+}
+.footer_container {
+  position: relative;
+  color: #fff;
+  font-size: 24px;
+  background-color: #000;
+  z-index: 3;
+}
+
+.logo {
+  justify-content: center;
+}
+
+.game_logo {
+  width: 199px;
+  height: 53px;
+}
+.divider {
+  margin: 0 15px;
+}
+a {
+  color: #fff;
+}
+.rowFlex {
+  display: flex;
+}
+.link {
+  font-size: 20px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.copyright {
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.tips {
+  font-size: 18px;
+  width: 600px;
+  height: 166px;
+  line-height: 30px;
+  margin: auto;
+}

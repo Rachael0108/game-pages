@@ -1,0 +1,125 @@
+.video {
+  border-radius: 10px;
+}
+
+.nestedSwiper {
+  width: auto;
+  height: 1046px;
+  margin-top: 30px;
+  margin-left: calc((100vw - 640px) / 2);
+
+  .swiper-wrapper {
+    width: 100%;
+    will-change: transform3d;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+    overflow: unset;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 640px;
+    height: 1046px;
+  }
+
+  .swiper-slide {
+    pointer-events: none;
+    z-index: 98;
+    will-change: zIndex, width;
+    animation: all 0.3s ease;
+
+    lite-youtube {
+      margin-top: 30px;
+      border-radius: 60px;
+    }
+
+    video {
+      margin-top: 30px;
+    }
+  }
+
+
+  .swiper-slide-prev, .swiper-slide-next {
+    filter: brightness(0.7) blur(1px) !important;
+  }
+
+  .swiper-slide-active {
+    pointer-events: all !important;
+    filter: brightness(1);
+  }
+
+  .swiper-slide-active {
+    opacity: 1;
+  }
+
+  .swiper-item-prev {
+    position: relative;
+    left: 500px;
+  }
+
+  .swiper-item-next {
+    position: relative;
+    right: 500px;
+  }
+
+  .swiper-pagination {
+    width: 700px;
+    position: absolute;
+    bottom: 350px;
+    left: calc((100vw - 700px) / 2);
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+
+    .swiper-button-prev, .swiper-button-next {
+      cursor: pointer;
+      width: 57px;
+      height: 81px;
+      background: url("@/mb/assets/img/swiper/page-nav.png") no-repeat;
+      background-size: 100% 100%;
+      position: relative;
+      top: 0;
+      z-index: 9;
+      transition: all 0.3s ease;
+      transform: rotate(180deg);
+    }
+
+    .swiper-button-next {
+      transform: rotate(0deg);
+    }
+  }
+
+  .role-pagination {
+    margin: 10px auto;
+    position: relative;
+    z-index: 120;
+    top: 360px;
+
+    ul {
+      position: relative;
+      width: 400px;
+      justify-content: space-around;
+      z-index: 12;
+      margin: auto;
+
+      .page-dot {
+        cursor: pointer;
+        width: 21px;
+        height: 21px;
+        border-radius: 21px;
+        background: #bcbcbc;
+        border: 5px solid #fff;
+      }
+
+      .page-dot-active {
+        cursor: pointer;
+        background: #000000;
+        background-size: 100% 100%;
+        animation: fadeIn 0.3s ease;
+      }
+    }
+  }
+}

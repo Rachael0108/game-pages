@@ -1,0 +1,328 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* custom */
+a {
+    text-decoration: none;
+    -webkit-backface-visibility: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+html {
+    overflow-x: hidden;
+}
+html,
+body {
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", "微软雅黑", sans-serif;
+    line-height: 1;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#root {
+    width: 100vw;
+    z-index: 1001;
+    margin: auto;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+#root > div {
+    width: 100%;
+}
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: inline-block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/*隐藏*/
+.dn {
+    display: none;
+}
+
+/* 通用 */
+input {
+    outline: none;
+}
+
+/* 文本输入框 */
+input[type="text"] {
+    border: none;
+    background-color: transparent;
+}
+
+/* 密码框 */
+input[type="password"] {
+    border: none;
+    background-color: transparent;
+}
+
+/* 复选框和单选框 */
+input[type="checkbox"],
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+/* 搜索框 */
+input[type="search"] {
+    border: none;
+    background-color: transparent;
+}
+
+/* 数字输入框 */
+input[type="number"] {
+    border: none;
+    background-color: transparent;
+}
+
+/* 范围输入 */
+input[type="range"] {
+    background: none;
+}
+
+@font-face {
+    font-family: 'adobe-bold';
+    src: url('./font/PingFang-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FC';
+    src: url('./font/FC.ttf') format('truetype');
+}
+.relative {
+    position: relative;
+}
+
+img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+}
+
+.flex {
+    display: flex;
+}
+
+.w-100 {
+    width: 100vw;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.pd-top-126 {
+    padding-top: 126px;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.float-right {
+    float: right;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.mt-15 {
+    margin-top: 10px;
+}
+
+.breathing {
+    animation: breathing 1.5s infinite;
+}
+
+@keyframes breathing {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.toast-fadeIn {
+    animation: ToastfadeIn 0.3s ease-in-out;
+}
+@keyframes ToastfadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.toast-fadeOut {
+    animation: ToastfadeIn 0.2s ease-in-out reverse;
+    animation-delay: 0.2s;
+}

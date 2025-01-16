@@ -1,0 +1,10 @@
+.top-button {
+  position: relative;
+  bottom: 0;
+  left: calc((750px - 165px) / 2);
+  width: 140px;
+  height: 94px;
+  background: url("../../assets/img/top.png") no-repeat;
+  background-size: contain;
+  z-index: 2;
+}

@@ -1,0 +1,134 @@
+.popup {
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+}
+.slideInTop {
+  animation: slideInTop 0.3s ease-in-out;
+}
+.slideOutBottom {
+  animation: slideInTop 0.3s reverse ease-in-out;
+}
+@keyframes slideInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(10%);
+  }
+}
+.popup-wrapper {
+  width: 750px;
+  height: 100%;
+  z-index: 10000;
+  position: fixed;
+  overflow: hidden;
+  overscroll-behavior-y: contain;
+}
+.popup-mask {
+  background: rgba(60, 62, 63, 0.8);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  animation: fadeIn 0.3s ease-in-out;
+}
+.top-unset {
+  top: unset !important;
+}
+.popup_inner {
+  width: 711px;
+  height: 1024px;
+  position: absolute;
+  top: calc((100vh - 1024px) / 2);
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: slideInTop 0.5s ease-in-out;
+  z-index: 9990;
+
+  .popup-bg {
+    position: absolute;
+    width: 745px;
+    height: 520px;
+  }
+  .close-btn {
+    width: 84px;
+    height: 84px;
+    position: absolute;
+    top: 250px;
+    right: 20px;
+    z-index: 100;
+  }
+  .close-btn:active {
+    animation: rotate 0.5s ease;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .rewards-btn {
+    position: absolute;
+    bottom: 10px;
+    width: 404px;
+    height: 131px;
+  }
+}
+.slideOutBottom {
+  animation: slideOutBottom 0.5s ease-in-out;
+}
+.fadeOut {
+  animation: fadeIn 0.2s ease-in-out reverse;
+  animation-delay: 0.2s;
+}
+// 自下而上入场
+@keyframes slideInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+// 上下波动
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideOutBottom{
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+}
+.rewards {
+  //animation-delay: 0.5s;
+  animation: slideInTop 0.5s ease-in-out;
+}
