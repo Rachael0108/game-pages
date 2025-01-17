@@ -11,28 +11,20 @@ const Footer = () => {
         <div className="footer_container">
           <div className="pc-footer-left">
             <img className="pc-game_logo" src={Logo} alt=""/>
-            <div>
+            <div className="relative">
+              <img className="pc-link-img" alt="" src={PcLink}/>
               <ul className="pc-link">
-                <img alt="" src={PcLink}/>
                 <li>
-                  <a href="https://www.hermesgames.com.tw/#/customerCenter?type=companyInfo"
-                  ></a
-                  >
+                  <a target="_blank" href="https://www.hermesgames.com.tw/#/customerCenter?type=companyInfo"></a>
                 </li>
                 <li>
-                  <a href="https://www.hermesgames.com.tw/#/customerCenter?type=contactUs"
-                  ></a
-                  >
+                  <a target="_blank" href="https://www.hermesgames.com.tw/#/customerCenter?type=contactUs"></a>
                 </li>
                 <li>
-                  <a href="https://www.hermesgames.com.tw/#/customerCenter?type=serviceTerms"
-                  ></a
-                  >
+                  <a target="_blank" href="https://www.hermesgames.com.tw/#/customerCenter?type=serviceTerms"></a>
                 </li>
                 <li>
-                  <a href="https://www.hermesgames.com.tw/#/customerCenter?type=privacyPolicy"
-                  ></a
-                  >
+                  <a target="_blank" href="https://www.hermesgames.com.tw/#/customerCenter?type=privacyPolicy"></a>
                 </li>
               </ul>
             </div>

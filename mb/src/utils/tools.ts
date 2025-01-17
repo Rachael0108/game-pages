@@ -66,8 +66,9 @@ export function getLink(type: string) {
     line: "https://line.me/ti/g2/AdrogOp_njALYtTIwGJBaDnmnuzkm0xyPdcYWA?utm_source=invitation&utm_medium=link_copy&utm_campaign=default",
     fb: "https://www.facebook.com/3KDfantasy.TH/",
     naverGame: "https://game.naver.com/lounge/syungsyung/home",
-    ios: "https://apps.apple.com/us/app/%E0%B8%AD%E0%B8%B2%E0%B8%95-%E0%B8%A5-%E0%B8%A2%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%81-%E0%B8%81/id6680157262?ppid=9842cfd4-77ce-4646-beac-f643d1c60e40",
-    gp: "https://xxmth.onelink.me/MZMF/2b0yxcxi",
+    ios: "https://sgzhxzj.onelink.me/N6F7/aq0o056z",
+    gp: "https://sgzhxzj.onelink.me/N6F7/aq0o056z",
+    icon: "https://www.facebook.com/3KDfantasy/"
   }
   return links[type]
 }

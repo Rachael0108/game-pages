@@ -10,6 +10,16 @@
     top: 0;
   }
 
+  .icon-link {
+    width: 200px;
+    height: 120px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+
   .kv-logo {
     position: absolute;
     width: 297px;
@@ -32,7 +42,7 @@
     width: calc(258px * 2);
     position: absolute;
     bottom: 50px;
-    left: calc((750px - 258px * 2 + 40px ) / 2);
+    left: calc((750px - 258px * 2 + 40px) / 2);
   }
 
   .ios-btn, .gp-btn {
@@ -41,9 +51,10 @@
     left: calc((750px - 258px) / 2);
     bottom: 170px;
   }
-.gp-btn {
-  margin-left: -40px;
-}
+
+  .gp-btn {
+    margin-left: -40px;
+  }
 
   @keyframes moveFinger {
     0% {

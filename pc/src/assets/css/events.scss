@@ -7,10 +7,12 @@
     width: 459px;
     height: 149px;
     position: absolute;
-    bottom: 35px;
+    bottom: -150px;
     left: calc((100% - 459px) / 2);
+    cursor: pointer;
   }
   .pc-event-rewards {
+    width: 100%;
     position: absolute;
     display: flex;
     flex-direction: column;

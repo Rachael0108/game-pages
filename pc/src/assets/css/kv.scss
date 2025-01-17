@@ -1,29 +1,62 @@
 #pc-kv {
+  .icon-link {
+    width: 300px;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    left: 385px;
+    z-index: 10;
+    opacity: 0;
+    cursor: pointer;
+  }
 
-    .kv-role {
-        position: relative;
-        width: 1920px;
-        height: 1164px;
-        left: 0;
-        top: 0;
+  .kv-role {
+    position: relative;
+    width: 1920px;
+    height: 1164px;
+    left: 0;
+    top: 0;
+    animation: slideInUp 2s ease;
+  }
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .kv-logo {
+    position: absolute;
+    width: 297px;
+    height: 196px;
+    left: calc((750px - 297px) / 2);
+    top: 134px;
+  }
+
+  .kv-quoto {
+    width: 1217px;
+    height: 161px;
+    position: absolute;
+    bottom: 140px;
+    left: calc((1920px - 1217px) / 2);
+    z-index: 12;
+    animation: slideInBottom 1s ease;
+  }
+  @keyframes slideInBottom {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 30px, 0);
     }
 
-    .kv-logo {
-        position: absolute;
-        width: 297px;
-        height: 196px;
-        left: calc((750px - 297px) / 2);
-        top: 134px;
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
     }
+  }
 
-    .kv-quoto {
-      width: 1217px;
-      height: 161px;
-      position: absolute;
-      bottom: 140px;
-      left: calc((1920px - 1217px) / 2);
-      z-index: 12;
-    }
   .pc-download {
     width: calc(290px * 2 + 20px);
     height: 138px;
@@ -36,7 +69,9 @@
 
     img {
       width: 290px;
+      cursor: pointer;
     }
+
     img:last-child {
       margin-left: -60px;
     }

@@ -20,6 +20,7 @@ function KV() {
   return (
     <div id='mb-kv'>
       <img className="kv-role" src={KVImage} alt=""/>
+      <button className="icon-link" onClick={() => { window.open('https://www.facebook.com/3KDfantasy/', '_blank') }}></button>
       <div className="kv-store">
         <img alt="" src={IOSBtn} className="ios-btn" onClick={handleIOS}/>
         <img alt="" src={GP} className="gp-btn" onClick={handleGP}/>

@@ -21,7 +21,9 @@ function Events({}) {
           <img className="reward-b" alt="" src={rewardB}/>
           <img className="reward-c" alt="" src={rewardC}/>
         </div>
-        <img className="mb-event-btn" src={BT} alt=""/>
+        <img className="mb-event-btn" src={BT} alt=""
+             onClick={() => { window.open('https://www.hermesgames.com.tw/#/gameStoreCenter', '_blank') }}
+        />
       </div>
     </div>
   )
