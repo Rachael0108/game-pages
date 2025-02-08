@@ -45,7 +45,7 @@ const Toast = forwardRef((props: { text?: string }, ref) => {
       setShowToast(false)
       setFadeIn(false)
     }
-  }, [ props ])
+  }, [props, text])
 
   return (
     <>

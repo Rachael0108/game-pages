@@ -4,9 +4,10 @@ import AttentionBg from '../assets/img/attention.png'
 import '../assets/css/m_attention.scss'
 
 const Attention = () => {
+
   return (
     <div id="m-attention">
-      <img alt="" src={AttentionBg}/>
+      <img className="attention-bg" alt="" src={AttentionBg}/>
     </div>
   )
 }

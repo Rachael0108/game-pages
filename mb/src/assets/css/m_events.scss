@@ -15,22 +15,25 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    img:nth-child(1) {
+    img {
+      margin-bottom: 21px;
+    }
+
+    .reward-a {
       width: 630px;
       height: 358px;
       margin-top: 20px;
     }
-    img:nth-child(2) {
+    .reward-b {
       width: 604px;
       height: 317px;
     }
-    img:nth-child(3) {
+    .reward-c {
       margin-top: 30px;
       width: 635px;
       height: 319px;
     }
   }
-
   .mb-event-btn {
     position: absolute;
     bottom: 50px;

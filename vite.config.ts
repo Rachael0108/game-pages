@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import autoPrefixer from 'autoprefixer';
 import postcsspxtoviewport8plugin from 'postcss-px-to-viewport-8-plugin';
 import legacy from '@vitejs/plugin-legacy';
+import commonjs from '@rollup/plugin-commonjs';
 import path from 'path';
 import postcssViewportHeightFix from "postcss-vh-fix";
 import fs from 'fs';
@@ -32,6 +33,7 @@ const base64SetPlugin = (limit = 4096) => {
 const __dirname = path.resolve()
 export default defineConfig({
   plugins: [
+    commonjs(),
     react(),
     base64SetPlugin(),
     legacy({
@@ -39,6 +41,7 @@ export default defineConfig({
     }),
   ],
   resolve: {
+    extensions: ['.js', '.jsx'],
     alias: {
       '@/common': path.resolve(__dirname, './common'),
       '@/mb': path.resolve(__dirname, './mb/src'),
@@ -50,9 +53,7 @@ export default defineConfig({
     commonjsOptions: { include: [] },
     chunkSizeWarningLimit: 5000,
     rollupOptions: {
-      input: {
-        pc: path.resolve(__dirname, "index.html"),
-      },
+      input: path.resolve(__dirname, "index.html"),
       output: {
         manualChunks: (id) => {
           if(id.includes("node_modules")) {
@@ -65,7 +66,7 @@ export default defineConfig({
         chunkFileNames: () => {
           return `js/[name].${new Date().getTime()}.js`;
         },
-      }
+      },
     },
   },
   css: {

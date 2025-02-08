@@ -1,34 +1,30 @@
+import { isPC } from '@/mb/utils/tools.ts'
+import React, { useEffect, useState } from 'react'
+import Mobile from '@/mb/Mobile.tsx'
+import Desktop from '@/pc/Desktop.tsx'
+import FacebookBall from '@/pc/components/FacebookBall.tsx'
+import { useSize } from 'ahooks';
+import './assets/css/facebookBall.scss'
 import './assets/css/App.scss'
 import '../../common/reset.css';
-import { isPC } from './utils/tools'
-import React, { useEffect, useState } from 'react'
-import Mobile from '../../mb/src/Mobile.tsx'
-import Desktop from '@/pc/Desktop.tsx'
-import { useSize } from 'ahooks';
 
 function App() {
-  const [ isPc, setIsPc ] = useState(null)
+  const [ isDesktop, setIsDesktop ] = useState(undefined)
   const size = useSize(document.body);
 
   useEffect(() => {
-    setIsPc(isPC())
+    setIsDesktop(isPC())
   }, [ size ]);
 
-  if(isPc === null) {
-    return
+  if ( isDesktop === undefined ) {
+    return <div>...</div>
   }
-  if ( isPc ) {
-    return (
-      <Desktop/>
-    )
-  } else {
-    return (
-      <>
-        <Mobile/>
-      </>
-    )
-  }
-
+  return (
+    <>
+      {isDesktop ? <Desktop/> : <Mobile/>}
+      <FacebookBall/>
+    </>
+  )
 }
 
 export default App

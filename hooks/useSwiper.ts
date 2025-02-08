@@ -15,8 +15,8 @@ export const useSwiper = (handleNext: () => void, handlePrev: () => void) => {
   const handleMove = (e) => {
     endX.current = e.touches[0].clientX;
   }
-  const handleEnd = (e) => {
-    let distance = Math.abs(startX.current - endX.current)
+  const handleEnd = () => {
+    const distance = Math.abs(startX.current - endX.current)
     if(distance > MIN_TOUCH_DISTANCE) {
       if(startX.current > endX.current) {
         handleNext()
