@@ -22,12 +22,9 @@ const FacebookBall = () => {
       window.removeEventListener('scroll', handleScroll)
     }
   }, []);
-  useEffect(() => {
-    console.log('affixPosition ', affixPosition)
 
-  }, [ affixPosition ]);
   return (
-    isDesktop ? <div id="facebook-ball" className={affixPosition > 700 ? 'unfix' : 'affix'}>
+    isDesktop ? <div id="facebook-ball" className={affixPosition > 1900 ? 'unfix' : 'affix'}>
         <img className="facebook-link" alt="" src={FB} onClick={handleFB}/>
       </div>
       : <div id="mb-facebook-ball" className={affixPosition > 1150 ? 'mb-unfix' : 'mb-affix'}>
