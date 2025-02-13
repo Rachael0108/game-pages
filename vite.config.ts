@@ -40,6 +40,7 @@ export default defineConfig({
       targets: ['defaults', 'not IE 11', 'last 2 versions', '> 1%']
     }),
   ],
+  base: '/event/',
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
