@@ -40,7 +40,7 @@ function Events() {
 
           <Fade delay={300} triggerOnce>
             <img className="event-btn" alt="" src={KVBtn}
-                 onClick={() => { window.open('https://www.hermesgames.com.tw/#/gameStoreCenter', '_blank') }}
+                 onClick={() => { window.open('https://www.hermesgames.com.tw/#/gameStoreCenter?tabId=1', '_blank') }}
             />
           </Fade>
         </div>

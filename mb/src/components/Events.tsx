@@ -31,7 +31,7 @@ function Events() {
           </Reveal>
         </div>
         <img className="mb-event-btn" src={BT} alt=""
-             onClick={() => { window.open('https://www.hermesgames.com.tw/#/gameStoreCenter', '_blank') }}
+             onClick={() => { window.open('https://www.hermesgames.com.tw/#/gameStoreCenter?tabId=1', '_blank') }}
         />
       </div>
     </div>
