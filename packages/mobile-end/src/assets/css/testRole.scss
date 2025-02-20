@@ -1,0 +1,124 @@
+.test-wrapper {
+  width: 750px;
+  height: 4231px;
+
+  img {
+    position: absolute;
+  }
+}
+
+.submit-btn {
+  position: absolute;
+  width: 454px;
+  height: 124px;
+  left: calc((750px - 454px) / 2);
+  bottom: 180px;
+  animation: breathing 1.3s ease-out infinite;
+  cursor: pointer;
+}
+
+.page-bg {
+  width: 750px;
+  height: 4231px;
+  z-index: -1;
+  position: absolute;
+}
+
+.warning-wrapper {
+  width: 600px;
+  height: 333px;
+  border-radius: 25px;
+  background: white;
+  position: relative;
+  margin: auto;
+  padding: 80px 85px;
+  box-sizing: border-box;
+
+  .warning-text {
+    font-family: Niramit, sans-serif;
+    font-size: 33.33px;
+    text-align: center;
+  }
+
+  .warning-button {
+    min-width: 132px;
+    height: 83px;
+    color: #ffffff;
+    border-radius: 100px;
+    background: #501f10;
+    font-family: FCD-bold;
+    font-size: 31.25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 75px;
+    padding: 0 20px;
+    box-sizing: content-box;
+    cursor: pointer;
+    white-space: nowrap;
+    line-height: 83px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .test-wrapper {
+    width: 750px;
+    height: 4231px;
+
+    img {
+      position: absolute;
+    }
+  }
+
+  .submit-btn {
+    position: absolute;
+    width: 454px;
+    height: 124px;
+    left: calc((750px - 454px) / 2);
+    bottom: 180px;
+    animation: breathing 1.3s ease-out infinite;
+    cursor: pointer;
+  }
+
+  .page-bg {
+    width: 750px;
+    height: 4231px;
+    z-index: -1;
+    position: absolute;
+  }
+
+  .warning-wrapper {
+    width: 600px;
+    height: 333px;
+    border-radius: 25px;
+    background: white;
+    position: relative;
+    margin: auto;
+    padding: 80px 85px;
+    box-sizing: border-box;
+
+    .warning-text {
+      font-family: Niramit, sans-serif;
+      font-size: 33.33px;
+      text-align: center;
+    }
+
+    .warning-button {
+      min-width: 132px;
+      height: 83px;
+      color: #ffffff;
+      border-radius: 100px;
+      background: #501f10;
+      font-family: FCD-bold;
+      font-size: 31.25px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 75px;
+      padding: 0 20px;
+      box-sizing: content-box;
+      cursor: pointer;
+      white-space: nowrap;
+      line-height: 83px;
+    }
+  }
+}

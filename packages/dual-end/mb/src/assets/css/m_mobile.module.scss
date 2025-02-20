@@ -1,0 +1,114 @@
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+main {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+.event-bg {
+  width: 750px;
+  height: 2409px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.navBg {
+  position: absolute;
+  width: 409px;
+  height: 100px;
+  z-index: 1000;
+  top: calc(140px + 135px + 88px - 6px);
+  left: calc((750px - 409px) / 2);
+}
+.menu-pop-bg {
+  width: 750px;
+  height: 100vh;
+  background: rgba(38, 38, 38, 0.95);
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.none-space {
+  height: 200px;
+  width: 10vw;
+}
+.close-btn {
+  width: 64px;
+  height: 69px;
+  z-index: 1008;
+  right: 36px;
+  top: 40px;
+  left: unset;
+}
+#body_part {
+  background: #423729;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  top: 0;
+  width: 750px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  line-height: 100vh;
+  color: #fff;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.box {
+  width: 75px;
+  height: 75px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #535bf2;
+  font-weight: 600;
+  line-height: 1.2;
+  will-change: transform;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes cutLight {
+  0% {
+    transform: rotate(0deg) translateY(-300px) translateX(-300px) scale(0.2);
+  }
+  100% {
+    transform: rotate(360deg) translateY(0) translateX(0) scale(1);
+  }
+}
+.parent-scroll {
+  position: relative;
+  width: 750px;
+}
+.content-scroll {
+  position: relative;
+  min-height: 100vh;
+}

@@ -1,0 +1,234 @@
+.result-wrapper {
+  width: 750px;
+  height: 1500px;
+}
+.result-bg {
+  width: 750px;
+  height: 1500px;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+.result-title {
+  width: 416px;
+  height: 74px;
+  margin: auto;
+  position: relative;
+  top: 140px;
+  z-index: 10;
+}
+.role-info {
+  position: relative;
+  top: 60px;
+  height: 780px;
+  padding: 0 27px;
+  box-sizing: border-box;
+
+  .role-img {
+    height: 613px;
+    margin: 106px auto auto auto;
+  }
+  p {
+    text-align: center;
+  }
+  .name {
+    width: 263px;
+    height: 68px;
+    line-height: 68px;
+    font-family: FCD-bold, sans-serif;
+    font-size: 41.67px;
+    color: white;
+    z-index: 20;
+    position: absolute;
+    bottom: 100px;
+    left: calc((100% - 263px) / 2);
+  }
+  .name-bg {
+    width: 263px;
+    height: 68px;
+    position: absolute;
+    bottom: 100px;
+    left: calc((100% - 263px) / 2);
+    z-index: 19;
+  }
+  #personality {
+    position: absolute;
+    bottom: 0;
+    font-family: Niramit, sans-serif;
+    font-size: 31.25px;
+    color: #4f2311;
+    text-align: left;
+    padding: 0 20px;
+  }
+}
+.button-group {
+  position: relative;
+  top: 120px;
+  padding: 0 27px;
+  box-sizing: border-box;
+
+  div {
+    cursor: pointer;
+  }
+
+  .button-bottom, .button-top {
+    display: flex;
+    justify-content: space-around;
+    a {
+      position: relative;
+      top: unset;
+      cursor: pointer;
+    }
+  }
+  .button-top {
+    a, div {
+      width: 346px;
+      height: 103px;
+    }
+    .button-fb {
+      background: url("@/assets/img/result/share-fb-dark.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    .button-fb:hover {
+      background: url("@/assets/img/result/share-fb.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    .button-lineme {
+      background: url("@/assets/img/result/share-line-dark.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    .button-lineme:hover {
+      background: url("@/assets/img/result/share-line.png") no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  .button-bottom {
+    margin-top: 30px;
+    a, div {
+      width: 335px;
+      height: 73px;
+    }
+    .button-again {
+      background: url("@/assets/img/result/play-again-dark.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    .button-again:hover {
+      background: url("@/assets/img/result/play-again.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    .button-other {
+      background: url("@/assets/img/result/play-other-test-dark.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    .button-other:hover {
+      background: url("@/assets/img/result/play-other-test.png") no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .result-wrapper {
+    width: 750px;
+    height: 1500px;
+  }
+  .result-bg {
+    width: 750px;
+    height: 1500px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+  }
+  .result-title {
+    width: 416px;
+    height: 74px;
+    margin: auto;
+    position: relative;
+    top: 140px;
+    z-index: 10;
+  }
+  .role-info {
+    position: relative;
+    top: 60px;
+    height: 780px;
+    padding: 0 27px;
+    box-sizing: border-box;
+
+    .role-img {
+      height: 613px;
+      margin: 106px auto auto auto;
+    }
+    p {
+      text-align: center;
+    }
+    .name {
+      width: 263px;
+      height: 68px;
+      line-height: 68px;
+      font-family: FCD-bold, sans-serif;
+      font-size: 41.67px;
+      color: white;
+      z-index: 20;
+      position: absolute;
+      bottom: 100px;
+      left: calc((100% - 263px) / 2);
+    }
+    .name-bg {
+      width: 263px;
+      height: 68px;
+      position: absolute;
+      bottom: 100px;
+      left: calc((100% - 263px) / 2);
+      z-index: 19;
+    }
+    #personality {
+      position: absolute;
+      bottom: 0;
+      font-family: Niramit, sans-serif;
+      font-size: 31.25px;
+      color: #4f2311;
+      text-align: left;
+      padding: 0 20px;
+    }
+  }
+  .button-group {
+    position: relative;
+    top: 120px;
+    padding: 0 27px;
+    box-sizing: border-box;
+    .button-top {
+      a, div {
+        width: 346px;
+        height: 103px;
+      }
+    }
+    .button-bottom {
+      margin-top: 30px;
+      a, div {
+        width: 335px;
+        height: 73px;
+      }
+    }
+  }
+}
+// 如果是移动端,底部按钮直接高亮
+@media screen and (max-width: 750px) {
+  .button-group:has(.button-fb) {
+    .button-fb {
+      background: url("@/assets/img/result/share-fb.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    .button-lineme {
+      background: url("@/assets/img/result/share-line.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    .button-again {
+      background: url("@/assets/img/result/play-again.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    .button-other {
+      background: url("@/assets/img/result/play-other-test.png") no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+}

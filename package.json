@@ -1,45 +1,16 @@
 {
-  "name": "fantasy",
+  "name": "game-monorepo",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "dev": "pnpm -F dual-end dev",
+    "build": "pnpm -F dual-end build",
+    "preview": "pnpm -F dual-end preview",
+    "dev:mb": "pnpm -F mobile-end dev",
+    "build:mb": "pnpm -F mobile-end build",
+    "preview:mb": "pnpm -F mobile-end preview"
   },
   "dependencies": {
-    "@rollup/plugin-commonjs": "28.0.2",
-    "ahooks": "^3.8.1",
-    "amfe-flexible": "^2.2.1",
-    "autoprefixer": "^10.4.19",
-    "path": "^0.12.7",
-    "postcss": "8.5.1",
-    "postcss-vh-fix": "^0.0.4",
-    "prop-types": "^15.8.1",
-    "react": "18.2.0",
-    "react-awesome-reveal": "^4.2.14",
-    "react-dom": "18.2.0",
-    "react-lazyload": "^3.2.1",
-    "rimraf": "^5.0.7",
-    "zustand": "5.0.2"
-  },
-  "devDependencies": {
-    "@types/node": "^22.0.0",
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22",
-    "@types/react-lazyload": "^3.2.3",
-    "@typescript-eslint/eslint-plugin": "^7.2.0",
-    "@typescript-eslint/parser": "^7.2.0",
-    "@vitejs/plugin-legacy": "^5.4.1",
-    "@vitejs/plugin-react": "^4.3.4",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
-    "postcss-px-to-viewport-8-plugin": "^1.2.5",
-    "sass": "^1.81.0",
-    "style-loader": "^4.0.0",
-    "typescript": "^5.2.2"
+    "@emotion/react": "^11.14.0",
+    "vite": "5.4.12"
   }
 }

@@ -1,0 +1,117 @@
+.footer {
+  width: 750px;
+  height: 137px;
+  position: absolute;
+  bottom: 0;
+  background: black;
+  z-index: 12;
+  text-align: center;
+  padding: 40px 0 30px 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: adobe-bold, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+
+  .morefun-logo {
+    width: 158px;
+    height: 35px;
+    position: absolute;
+    left: calc((100% - 158px) / 2);
+    top: 12px;
+  }
+  .footer_link {
+    width: 488px;
+    display: flex;
+    margin: 24px auto 0 auto;
+    white-space: nowrap;
+
+    a, p {
+      color: #ffffff;
+      display: inline-block;
+    }
+    a {
+      width: 212px;
+      height: 19px;
+      position: relative;
+      top: unset;
+      margin: auto;
+    }
+  }
+
+  .tips {
+    width: 715px;
+    font-size: 17px;
+    line-height: 18px;
+    margin: 10px auto 24px auto;
+    display: flex;
+    align-items: center;
+
+    p {
+      white-space: nowrap;
+      text-align: left;
+    }
+    span {
+      margin: 0 12px;
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  #footer {
+    width: 750px;
+    height: 137px;
+    position: absolute;
+    bottom: 0;
+    background: black;
+    z-index: 12;
+    text-align: center;
+    padding: 40px 0 30px 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: adobe-bold, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+
+    .morefun-logo {
+      width: 158px;
+      height: 35px;
+      position: absolute;
+      left: calc((100% - 158px) / 2);
+      top: 12px;
+    }
+    .footer_link {
+      width: 488px;
+      display: flex;
+      margin: 24px auto 0 auto;
+
+      a, p {
+        color: #ffffff;
+        display: inline-block;
+      }
+      a {
+        width: 212px;
+        height: 19px;
+        position: relative;
+        top: unset;
+        margin: auto;
+      }
+    }
+
+    .tips {
+      width: 708px;
+      font-size: 17px;
+      line-height: 18px;
+      margin: 10px auto 24px auto;
+      display: flex;
+      align-items: center;
+
+      p {
+        white-space: nowrap;
+        text-align: left;
+      }
+      span {
+        margin: 0 12px;
+      }
+    }
+  }
+}

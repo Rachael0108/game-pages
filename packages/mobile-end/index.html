@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"/>
+  <title>อาตี๋ลุยสามก๊ก กลับสู่โรแมนติกแห่งสามก๊ก</title>
+  <meta property="og:image" content="https://3kdfantasythquiz.gamemorefun.com/icon.jpg">
+  <meta property="og:image:url"  content="https://3kdfantasythquiz.gamemorefun.com/icon.jpg"  />
+  <meta property="og:url" content="https://3kdfantasythquiz.gamemorefun.com" />
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="3kdfantasythquiz.gamemorefun.com">
+  <meta property="fb:app_id" content="1019834019604623"/>
+  <meta
+    content="อาตี๋ลุยสามก๊ก กลับสู่โรแมนติกแห่งสามก๊ก"
+    property="og:title"
+  />
+  <meta
+    content="เว็บไซต์ทางการของอาตี๋ลุยสามก๊ก แพ็กสุดคุ้ม!"
+    property="og:description"
+  />
+  <meta
+    content="สามก๊ก,สามก๊กจี่,กลยุทธ์,ตำนานสามก๊ก,แม่ทัพ,ตะลุยสามก๊ก,เวลาว่าง,ผจญภัย,แฟนตาซี,ใหม่,ความสัมพันธ์,สามก๊กควิซ,Quiz"
+    property="og:keywords"
+  />
+  <link rel="icon" type="image/x-icon" href="https://3kdfantasythquiz.gamemorefun.com/icon.jpg"/>
+  <link rel="shortcut icon" href="https://3kdfantasythquiz.gamemorefun.com/icon.jpg">
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js"></script>
+  <script async defer src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js"></script>
+  <script>
+    window.fbAsyncInit = function () {
+      FB._https = (window.location.protocol == "https:")
+      //初始化
+      FB.init({
+        appId: '1019834019604623',
+        xfbml: true,
+        status: true,
+        cookie: true,
+        autoLogAppEvents: true,
+        version: 'v3.3',
+      })
+    };
+  </script>
+</head>
+<body>
+<img src="https://3kdfantasythquiz.gamemorefun.com/icon.jpg" alt='' style="display: none" />
+<div id="root"></div>
+<script type="module" src="src/main.tsx"></script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "อาตี๋ลุยสามก๊ก กลับสู่โรแมนติกแห่งสามก๊ก",
+  "alternateName": "",
+  "url": "https://3kdfantasythquiz.gamemorefun.com/",
+  "background_color": "#eee9cb"
+}</script>
+
+<script>
+  ;(function () {
+    var viewportVariable = 'vh'
+
+    function setViewportProperty(doc) {
+      var prevClientHeight
+      var variable = '--' + (viewportVariable || 'vh')
+
+      function handleResize() {
+        var clientHeight = doc.clientHeight
+        if (clientHeight === prevClientHeight) return
+        requestAnimationFrame(function updateViewportHeight() {
+          doc.style.setProperty(variable, clientHeight * 0.01 + 'px')
+          prevClientHeight = clientHeight
+        })
+      }
+
+      handleResize()
+      return handleResize
+    }
+    window.addEventListener('resize', setViewportProperty(document.documentElement))
+  })()
+</script>
+</body>
+</html>

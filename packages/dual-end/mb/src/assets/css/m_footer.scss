@@ -1,0 +1,65 @@
+.mb_footer {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+footer {
+  position: relative;
+}
+.mb_footer_container {
+  position: relative;
+  color: #fff;
+  font-size: 24px;
+  background-color: #000;
+  z-index: 3;
+  padding: 40px 20px;
+
+
+  .logo {
+    justify-content: center;
+  }
+
+  .game_logo {
+    width: 199px;
+    height: 53px;
+  }
+  .divider {
+    margin: 0 15px;
+  }
+  a {
+    color: #fff;
+  }
+  .rowFlex {
+    display: flex;
+
+    a {
+      white-space: nowrap;
+    }
+  }
+  .link {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 20px;
+    padding-top: 20px;
+  }
+
+  .copyright {
+    width: 673px;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    white-space: nowrap;
+    margin: auto;
+  }
+
+  .tips {
+    width: 670px;
+    height: 200px;
+    font-size: 18px;
+    letter-spacing: .8px;
+    line-height: 30px;
+    margin: auto;
+  }
+}
+

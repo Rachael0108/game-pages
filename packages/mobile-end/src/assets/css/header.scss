@@ -1,0 +1,81 @@
+.header {
+  width: 750px;
+  height: 147px;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+.header-bg {
+  width: 750px;
+  height: 147px;
+}
+a {
+  width: 52px;
+  height: 52px;
+  display: inline-block;
+  position: absolute;
+  top: calc((147px - 90px) / 2);
+}
+.fb-link {
+  right: 165px;
+  background: url("@/assets/img/kv/fb.png") no-repeat;
+  background-size: 100% 100%;
+}
+.line-link {
+  right: 95px;
+  background: url("@/assets/img/kv/line.png") no-repeat;
+  background-size: 100% 100%;
+}
+.header-avatar {
+  position: absolute;
+  right: 25px;
+  top: calc((147px - 90px) / 2);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: url("@/assets/img/kv/avatar.png") no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+  .header {
+    width: 750px;
+    height: 147px;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+  }
+  .header-bg {
+    width: 750px;
+    height: 147px;
+  }
+  a {
+    width: 52px;
+    height: 52px;
+    display: inline-block;
+    position: absolute;
+    top: calc((147px - 90px) / 2);
+  }
+  .fb-link {
+    right: 165px;
+    background: url("@/assets/img/kv/fb.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  .line-link {
+    right: 95px;
+    background: url("@/assets/img/kv/line.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  .header-avatar {
+    position: absolute;
+    right: 25px;
+    top: calc((147px - 90px) / 2);
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: url("@/assets/img/kv/avatar.png") no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+  }
+}

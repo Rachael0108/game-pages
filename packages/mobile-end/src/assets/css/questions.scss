@@ -1,0 +1,226 @@
+#questions-wrapper {
+  width: 750px;
+  position: relative;
+  margin-top: 67px;
+
+  .question-item {
+    width: 750px;
+    position: absolute;
+    top: 0;
+    padding: 56px 76px;
+    box-sizing: border-box;
+    z-index: 10;
+
+    .title {
+      width: 285px;
+      height: 66px;
+      margin: auto;
+      position: relative;
+
+      .title-img {
+        width: 285px;
+        height: 66px;
+        z-index: 11;
+      }
+      .title-text {
+        width: 285px;
+        height: 66px;
+        position: absolute;
+        line-height: 40px;
+        text-align: center;
+        font-size: 52px;
+        font-family: 'FCD-bold';
+        z-index: 12;
+        background-image:-webkit-linear-gradient(bottom,#f5c68f,#ffffab,#ffffde);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+      }
+    }
+
+    .question {
+      font-size: 37.5px;
+      line-height: 50px;
+      font-family: 'FCD-bold';
+      color: #4f2311;
+      text-align: center;
+    }
+
+    .options > div {
+      width: 621px;
+      height: 80px;
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+    .options {
+
+      .options-bg {
+        width: 645px !important;
+        height: 81px !important;
+        left: -18px !important;
+        top: 16px;
+        animation: fadeIn 0.3s ease-out;
+      }
+      .options-bg-un {
+        width: 621px !important;
+        left: -7px !important;
+      }
+
+      p {
+        width: 100%;
+        position: relative;
+        top: 0;
+        line-height: 134px;
+      }
+
+      .option {
+        font-family: 'Niramit-Regular';
+        font-size: 37.5px;
+        color: #4f2311;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      .option-prefix {
+        width: 697px;
+        position: absolute;
+        top: -15px;
+        left: 16px;
+        font-size: 41.67px;
+        font-family: 'Propaganda';
+        color: white;
+        z-index: 20;
+        display: inline-block;
+      }
+    }
+  }
+  .q-bg {
+    width: 697px;
+    position: relative;
+    left: calc((750px - 697px) / 2);
+    z-index: 9;
+
+  }
+}
+.questions {
+  width: 750px;
+}
+#questions-wrapper > div {
+  width: 750px;
+  position: relative;
+  margin-bottom: 63px;
+}
+@media screen and (min-width: 900px) {
+  .questions {
+    width: 750px;
+  }
+  #questions-wrapper {
+    position: relative;
+    margin-top: 67px;
+
+    .question-item {
+      width: 750px;
+      position: absolute;
+      top: 0;
+      padding: 56px 76px;
+      box-sizing: border-box;
+      z-index: 10;
+
+      .title {
+        width: 285px;
+        height: 66px;
+        margin: auto;
+        position: relative;
+
+        .title-img {
+          width: 285px;
+          height: 66px;
+          z-index: 11;
+        }
+        .title-text {
+          width: 285px;
+          height: 66px;
+          position: absolute;
+          line-height: 40px;
+          text-align: center;
+          font-size: 52px;
+          font-family: 'FCD-bold';
+          z-index: 12;
+          background-image:-webkit-linear-gradient(bottom,#f5c68f,#ffffab,#ffffde);
+          -webkit-background-clip:text;
+          -webkit-text-fill-color:transparent;
+        }
+      }
+
+      .question {
+        font-size: 37.5px;
+        line-height: 50px;
+        font-family: 'FCD-bold';
+        color: #4f2311;
+        text-align: center;
+      }
+
+      .options > div {
+        width: 621px;
+        height: 80px;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 30px;
+      }
+      .options {
+
+        .options-bg {
+          width: 645px !important;
+          height: 81px !important;
+          left: -18px !important;
+          top: 16px;
+          animation: fadeIn 0.3s ease-out;
+        }
+        .options-bg-un {
+          width: 621px !important;
+          left: -7px !important;
+        }
+
+        p {
+          width: 100%;
+          position: relative;
+          top: 0;
+          line-height: 134px;
+        }
+
+        .option {
+          font-family: 'Niramit-Regular';
+          font-size: 37.5px;
+          color: #4f2311;
+          display: block;
+          text-align: center;
+          margin-top: 10px;
+          cursor: pointer;
+        }
+        .option-prefix {
+          width: 697px;
+          position: absolute;
+          top: -15px;
+          left: 16px;
+          font-size: 41.67px;
+          font-family: 'Propaganda';
+          color: white;
+          z-index: 20;
+          display: inline-block;
+        }
+      }
+    }
+    .q-bg {
+      width: 697px;
+      position: relative;
+      left: calc((750px - 697px) / 2);
+      z-index: 9;
+    }
+  }
+
+  #questions-wrapper > div {
+    position: relative;
+    margin-bottom: 63px;
+  }
+}
